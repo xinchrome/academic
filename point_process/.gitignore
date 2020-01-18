@@ -11,10 +11,10 @@ nohup.out
 *.pdf
 
 # model log #
-log/
-!log/README.rd
+log/*
+!log/README.md
 
 # output images #
-pic/
-!pic/README.rd
+pic/*
+!pic/README.md
 
