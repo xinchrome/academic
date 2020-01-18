@@ -1,0 +1,21 @@
+{% extends "main.html" %}
+
+
+
+{% block content %} 
+        <div class="content_item">
+		  <div class="form_settings">
+            <h2>Contact</h2>
+            <p>Send us message here</p>
+			<p>&nbsp;</p>
+			<p><span>NAME</span><input type="text" name="your_name" value="" /></p>
+			<p><span>EMAIL</span><input type="text" name="your_email" value="" /></p>
+			<p><span>MESSAGE</span><textarea rows="8" cols="50" name="your_message"></textarea></p>
+            <p>&nbsp;</p>
+            <p>Answer:</p>
+			<p><span>9 + 3 = ?</span><input type="text" name="user_answer"  /><input type="hidden" name="answer" value="4d76fe9775" /></p>
+            <p>&nbsp;</p>
+            <p><span>&nbsp;</span><div class="advanced_search_part"><input type="submit" value="SEND" /></div></p>
+          </div>
+		</div>
+{% end %}

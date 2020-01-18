@@ -1,0 +1,65 @@
+<!--page_title,page_entry-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+  <title>{{ page_title }}</title>
+  <meta name="description" content="simulation optimization" />
+  <meta name="keywords" content="simulation optimization" />
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="{{ static_url("css/main.css") }}" />
+  <link rel="shortcut icon" href=" {{ static_url("images/favicon.ico") }}" />
+  <script type="text/javascript" src="{{ static_url("js/jquery.min.js") }}"></script>
+  <script type="text/javascript" src="{{ static_url("js/jquery.easing.min.js") }}"></script>
+  <script type="text/javascript" src="{{ static_url("js/submit.js") }}"></script>
+  <script type="text/javascript" src="{{ static_url("js/autocomplete.js") }}"></script>
+</head>
+
+<body>
+  <div id="header">
+  	<a href="/login/">Log in</a>
+  </div>
+  <div id="main">
+
+	<div id="menubar">
+	  <div id="welcome">
+	    <h1><a href="/index/">Paper Citation Forecasting</a></h1>
+	  </div>
+      <div id="menu_items">
+	    <ul id="menu">
+          <li {% if page_entry == 'index' or page_entry == 'main' %} class="current" {% end %}>
+          	<a href="/index/">Home</a></li>
+          <li {% if page_entry == 'contact' %} class="current" {% end %}><a href="/contact/">Contact</a></li>
+        </ul>
+      </div>
+    </div>	
+    
+	  <div id="site_content">		
+  
+  	  <div class="sidebar_container">       
+{% block sidebar_container %}
+  		<div class="sidebar" class="sidebar_item">
+              <h2>Feedback</h2>
+              <p>Welcome here, mate. Look around and leave your comments ...</p>
+  
+              <h3>latest comment</h3>
+              <p>...</p>
+          </div>  
+{% end %}		
+        </div>	  
+  
+  	  <div id="content" class="content_item">
+{% block content %} 
+{% end %}		  
+      </div> 
+    </div>
+
+  </div>
+    
+  <div id="footer">
+	  <p>@2015-2016&nbsp;&nbsp;&nbsp;aida.ecnu.edu.cn</p>
+  </div> 
+  
+</body>
+</html>

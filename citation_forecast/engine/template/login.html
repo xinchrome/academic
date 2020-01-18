@@ -1,0 +1,18 @@
+{% extends "main.html" %}
+
+{% block content %} 
+        <div class="content_item">
+		  <div class="form_settings">
+            <h2>LOG IN</h2>
+            <p>Username and password are required</p>
+			<p>&nbsp;</p>
+			<p><span>username</span><input type="text" name="your_name" value="" /></p>
+			<p><span>password</span><input type="password" name="your_password" value="" /></p>
+            <p>&nbsp;</p>
+            <p>Input the answer</p>
+			<p><span>5 + 4 = ?</span><input type="text" name="user_answer"  /><input type="hidden" name="answer" value="4d76fe9775" /></p>
+            <p>&nbsp;</p>
+            <p><span>&nbsp;</span><div class="advanced_search_part"><input type="submit" value="LOG IN" width="100px" /></div></p>
+          </div>
+		</div>
+{% end %}	

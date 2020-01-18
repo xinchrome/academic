@@ -1,0 +1,92 @@
+{% extends "main.html" %}
+
+{% block sidebar_container %}
+<!-- <input type="checkbox" id="checkbox-10-1" /><label for="checkbox-10-1"></label> -->
+  		<div class="sidebar" class="sidebar_item">
+
+              <h2 id="Searched_papers">Searched Papers</h2>
+             <div name="papers" id="papers"> 
+          	</div>
+            <div height="40px" width="100%" style="border: 0px solid #c3c3c3;">
+                 <div name="next_page" id="next_page" style="float:right;cursor:pointer;">
+                 <span style="color:DodgerBlue ;">Next ></span>
+                </div>            
+                <div name="prev_page" id="prev_page" style="float:left;cursor:pointer;">
+                <span style="color:DodgerBlue ;">< Previous</span>
+                </div>
+                <div style="margin: 10px 40px 0px 140px;">
+                <span style="color:DodgerBlue ;">Page</span> <input name="current_page" id="current_page" type="text" width="30px" placeholder="1" style="width:30px;"></input>
+                </div>                
+
+            </div> 
+            <p></p>
+
+              <h2 id="Inspector">Inspector</h2>
+             <div name="points" id="points">          
+              <p id="coordinate_text"><span style="color:DodgerBlue ;">year</span>:&nbsp;&nbsp;,<span style="color:DodgerBlue ;">citation</span>:</p>
+            </div>
+
+
+              <h2 id="Tools">Advanced Tools</h2>
+              <div style="margin:0px 0px 40px 0px;">
+                 <div name="tools" id="tools" class="advanced_select_part"> 
+                    <select name="select">
+                      <option value="title">Title</option>
+                      <option value="author">Author</option>
+                      <option value="journal">Journal</option>                  
+                      <option value="year">Year</option>
+                    </select>               
+                </div>
+                <div name="tools" id="tools" class="advanced_select_part"> 
+                    <select name="select">
+                      <option value="include">Include</option>
+                      <option value="exclude">Exclude</option>
+                      <option value="equal">Equal To</option> 
+                      <option value="prefix">Prefix</option>                  
+                    </select>               
+                </div>
+            </div>
+            <p></p>
+            <div style="height:60px;width:900px;">
+                  <div class="advanced_search_part">
+                      <input id="" name="" type="text" />
+                      <input id="" name="" class="submit" type="submit" value="Search" />
+                  </div>
+            
+            </div>
+
+
+              <h2 id="Feedback">Feedback</h2>
+              <div id="Comments" name="Comments">
+              <p>Welcome here, mate. Look around and leave your comments ...</p>
+              <h3>latest comment</h3>
+              <p>...</p>
+              </div>
+
+
+        </div>  
+
+{% end %}		
+
+
+{% block content %} 
+		<div class="search_input_part">
+		  	<input id="user_search" name="user_search" type="text" placeholder="Search a paper ..." />
+		  	<img id="submit" name="submit" class="submit" src=" {{ static_url("images/search6.png") }} " />
+		  	<img id="loading_gif" src=" {{ static_url("images/loading.gif") }}"/>
+        <div id="auto" name="auto" style="float:left;"></div>
+		</div>
+	      
+		<div id="predict_div" class="predict_div">
+      <p></p>
+
+		  <div style="margin:20px 0 0 0;">
+			<canvas id="CANVAS" width="600px" height="600px" style="border: 2px solid #c3c3c3; z-index:1;-webkit-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;-moz-box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 5px;box-shadow: rgba(0, 0, 0, 0.5) 0px 0px 2px;">
+			</canvas>
+			<canvas id="LINE_CANVAS" width="600px" height="600px" style="z-index: 1; positio: absolute; margin: -600px 0 0 0px;">
+			</canvas>
+		  </div>
+		</div>
+
+
+{% end %}	

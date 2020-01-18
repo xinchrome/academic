@@ -1,0 +1,39 @@
+# OS generated files #
+.DS_Store
+*.swp
+
+# compile
+*.pyc
+*.class
+__pycache__
+
+nohup.out
+
+target/
+.svn/
+.mvn/
+!.mvn/wrapper/maven-wrapper.jar
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+#.project
+#.settings
+.springBeans
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+

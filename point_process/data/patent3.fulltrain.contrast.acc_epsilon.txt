@@ -1,0 +1,6 @@
+&wgan_noise_sample&wgan_noise_sample&mle_only&mle_only&mae_with_wgan_noise_sample&mae_with_wgan_noise_sample&mse_with_wgan_noise_sample&mse_with_wgan_noise_sample\\
+MAPE&0.2526&0.6448&\textbf{0.1417}&\textbf{0.2598}&0.1538&0.3031&0.1542&0.3063\\
+ACC($\epsilon$=0.35)&0.7417&0.4665&\textbf{0.9282}&\textbf{0.7384}&0.8984&0.7008&0.8973&0.6969\\
+ACC($\epsilon$=0.3)&0.6893&0.4224&\textbf{0.8915}&\textbf{0.6714}&0.8528&0.6429&0.8529&0.6429\\
+ACC($\epsilon$=0.2)&0.5474&0.3184&\textbf{0.7516}&0.494&0.7158&\textbf{0.5022}&0.7135&0.5006\\
+ACC($\epsilon$=0.1)&0.3298&0.1879&\textbf{0.4704}&0.2651&0.4643&0.3028&0.4634&\textbf{0.3032}\\

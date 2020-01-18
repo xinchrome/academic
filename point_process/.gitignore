@@ -1,0 +1,20 @@
+# OS generated files #
+.DS_Store
+nohup.out
+
+# IDE and compile #
+*.pyc
+*.class
+.idea/
+*.swp
+
+*.pdf
+
+# model log #
+log/
+!log/README.rd
+
+# output images #
+pic/
+!pic/README.rd
+
